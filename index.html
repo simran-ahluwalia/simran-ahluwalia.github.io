@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Simran Kaur Ahluwalia</title>
+		 <link href="images/favicon.ico" rel="icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+		<meta charset="utf-8" />
+		<style type="text/css">
+
+body {
+	font-family: Georgia ;
+	font-size: 200px;
+}
+
+#container {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	color: White;
+	border-right: 5px solid White;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #499e97;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Simran Kaur Ahluwalia</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#two">Resume</a></li>
+											<li><a href="#three">Projects</a></li>
+											<li><a href="#one">About</a></li>
+											
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Simran Kaur Ahluwalia</h2>
+							
+<div id="container">
+	<div id="text"></div>
+</div>
+							<script type="text/javascript">
+
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 2300 || document.documentElement.scrollTop > 2300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// List of sentences
+var _CONTENT = [ "I'm Developer", "I'm Web Designer", " I'm an MBA"  ];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Implements typing effect
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>
+							
+							
+						</div>
+						<a href="#one" class="more scrolly">About Me</a>
+					</section>
+
+				
+
+				<!-- Two -->
+					<section id="one" class="wrapper alt style2">
+						<section class="spotlight">
+							
+							<div class="image"><img src="images/simran.jpg" alt="" /></div><div class="content">
+								<h2>About</h2>
+          <p font-family:Georgia >I am a highly-motivated, conscientious, and competent collaborator who possesses in-depth knowledge and expertise within this industry. With a proven track record of achievement, I pride myself on taking ownership of challenging problems; 
+			  maintain high standards, and assisting my employer in achieving their commercial objectives. 
+           </p>
+      
+<div class="row">
+                 <div class="col-sm-4">
+                 <ul> <li> <strong>City:</strong> <span>Mumbai, India</span></li>
+                </ul>
+              </div>
+              <div class="col-sm-8">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MBA/Master</span></li>
+                 
+                </ul>
+
+	  </div>
+	  
+	   <p>
+             
+                 <ul>
+                  <li> <strong>A fast learner with a proven track record of achievement</strong></li>
+				  <li> <strong> A strong sense of business acumen and the understanding that the organization’s commercial objectives are crucial to my work</strong></li>
+				  <li><strong> An adaptable approach to change, and someone who takes responsibility for their ongoing professional development</strong></li>
+                 </ul>
+				 </p> 
+				 </div>
+						</section>
+						
+						
+						
+						
+						<!-- One -->
+					<section id="two" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2 style="color:Black;">Certifications<br />
+					</h2>
+								<!-- <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br /> -->
+								<!-- fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
+							</header>
+							
+                 <ul > <li> <strong style="color:Black;">Oracle Cloud Infrastructure Foundations 2021 Associate</strong> <span>Oracle - December 2021</span></li>
+                
+              
+              <li>  <strong style="color:Black;">SAS Visual Business Analytics </strong><span>SAS - August 2021</span></li>
+			  <li> <strong style="color:Black;">Google Project Management</strong> <span>Google -May 2021</span></li>
+			  <li> <strong style="color:Black;">IBM Data Science Professional Certificate </strong> <span>IBM - March 2021</span></li>
+			  <li> <strong style="color:Black;">IBM Cybersecurity Analyst Professional Certificate</strong> <span>IBM - Feb 2021</span></li>
+			  <li> <strong style="color:Black;">APTECH certified ACCP PRO: NET APPS ENGINEER</strong> <span>Aptech - July 2018</span></li>
+			  <li> <strong style="color:Black;">APTECH certified Web developer</strong> <span>Aptech - September 2017</span></li>
+                  <li > <strong style="color:Black;"> Oracle Certified Professional, Java SE 6 Programmer</strong> <span>Oracle - May 2016</span></li>
+                 
+                </ul>
+				<h4 style="color:Black;">Skills<br />
+					</h4>
+			
+			
+			<ul class="actions">
+				<li><a  class="button small">Python</a></li>
+				<li><a  class="button small">JAVA</a></li>
+				<li><a  class="button small">ASP.NET</a></li>
+				<li><a  class="button small">C/C++</a></li>
+				<li><a  class="button small">SAS Visual Analytic</a></li>
+				<li><a  class="button small">HTML</a></li>
+				</ul>
+				<ul class="actions">
+				<li><a  class="button small">Data Visualization</a></li>
+				<li><a  class="button small">SQL</a></li>
+				<li><a  class="button small">Predictive modeling</a></li>
+				<li><a  class="button small">Machine Learning algorithms</a></li>
+	  </div>
+							
+							
+						</div>
+					</section>
+						
+						<section class="spotlight">
+							<div class="image"><img src="images/1.png" alt="" /></div><div class="content">
+								  <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Simran Kaur Ahluwalia</h4>
+              <p><em>Innovative and Solutions-driven, Seek opporunities to transform company practices into fresh, cost-effective solutions leading to more efficient operations.</em></p>
+              <ul>
+                <li>Mumbai, IND</li>
+                
+                <li>simrankaurahluwalia@gmail.com</li>
+              </ul>
+            </div>
+
+           
+          </div>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/2.png" alt="" /></div><div class="content">
+								
+								
+								<div class="row">
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+             
+              <p><strong> Business Development Intern </strong><br> <span><em>GoCrackIt , Mumbai, India </em></span></p>
+              <ul>
+                <li>Conduct market research and company research regarding a specific industry or company, including market trends/opportunities, technology description, competitive landscape, etc.</li>
+                <li>Manage the department metrics and provide data driven improvement suggestions for related processes </li>
+                <li>Perform and analysis of the level of alignment between the different groups interviewed and identify risks associated with any gaps</li>
+                <li>Develop a recommendation for improving alignment with the overarching Premium Services strategy</li>
+			  </ul>
+            </div>
+            <div class="resume-item">
+             
+              <p> <strong> Operations Executive</strong> <br><span><em>Infosys Limited, Pune, India</em></span></p>
+              <ul>
+<li> Perform root cause analysis of issues and carry out resolutions and recommend changes</li>
+ <li>Conduct impact analysis on new changes before moving them to production live system.</li>
+
+<li> Track and manage activities in a productive, timely, and effective manner</li>
+<li>Plan, direct, maintain, and coordinate network installation, maintenance, and operations</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+								
+								
+								
+								
+								</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Projects</h2>
+								
+								
+								
+							</header>
+							<ul class="features">
+								
+								<li >
+									<a href="BlogEngine.html">
+									<h3>Blog Engine</h3>
+									<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/java.png" alt="" /></span></div></div> </li>
+											</a>
+											<li>
+											<a href="Ecommerce.html">
+									<h3>E-commerce Website</h3>
+									<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/asp1.jpg" alt="" /></span></div></div> </li>
+											</a>
+								<li >
+								<a href="Techcare.html">
+									<h3>Tech Care</h3>
+									<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/tc2.png" alt="" /></span></div></div> </li>
+											</a>
+											
+								<li >
+								<a href="Pharma.html">
+									<h3>Pharma</h3>
+									<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/Pharma1.png" alt="" /></span></div></div></a> </li>
+								 <li ><a href="Restaurant.html">
+									<h3>Restaurant Capstone</h3>
+									<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/res3.png" alt="" /></span></div></div>
+</a>
+											</li>
+											
+								<li >
+								<a href="DataScience.html">
+									<h3>Data Science </h3>
+									<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/ds1.png" alt="" /></span></div></div> 
+											</a>
+											</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								
+								<p>A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact</p>
+							</header>
+							<ul class="actions stacked">
+								<li><a href="Resume.pdf" class="button fit icon solid fa-download" download rel="noopener noreferrer" target="_blank" >Resume</a></li>
+								
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/simran__ahluwalia/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/simran-kaur-ahluwalia-454868a2/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+	
+							<li><a href="https://github.com/simran-ahluwalia/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.credly.com/users/simran-kaur-ahluwalia" class="fas fa-award"><span class="label"></span></a></li>
+							<li><a href="mailto:simrankaurahluwalia@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Simran</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
